@@ -10,3 +10,10 @@ __pycache__/
 *.pyc
 .venv/
 .ipynb_checkpoints/
+
+# مخرجات التشغيل | Run outputs
+*.log
+*_out.txt
+out/
+tmp/
+outputs/

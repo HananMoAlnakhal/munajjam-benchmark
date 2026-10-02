@@ -45,6 +45,7 @@ Investigate how EveryAyah handles the basmala (separate file? merged into ayah 1
 - [ ] إعادة الإنتاج بأمر واحد. | Reproducible with one command.
 - [ ] نهاية آخر آية = مدة الملف المدمج (±10 ms). | Last ayah end equals concatenated file duration (±10 ms).
 - [ ] لا ملفات صوتية في المستودع. | No audio files committed.
+- [ ] لا ملفات مولّدة أو مخرجات تشغيل في المستودع (سجلات، مخرجات منجّم الخام، ملفات مؤقتة)؛ يُرفع الكود المصدري وملفات CSV النهائية فقط. | No generated files or run outputs committed (logs, raw Munajjam outputs, temp files); only source code and final CSVs.
 - [ ] README يوثّق التثبيت والمصدر والبسملة. | README documents setup, data source and basmala handling.
 
 ## التقرير الأسبوعي | Weekly report
