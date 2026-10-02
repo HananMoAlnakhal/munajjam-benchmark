@@ -56,6 +56,8 @@ At the end of the week, in `reports/week1.md`:
 - **العوائق | Blockers**
 - **التالي | Next**
 - **أسئلة | Questions**
+- **لماذا؟ | Why?** اشرحي بكلامك أنتِ، في فقرة أو فقرتين، لماذا حسبتِ بداية الآيات ونهاياتها بهذه الطريقة، وما الذي قد يُفسد دقتها (مثل الصمت في أول الملفات وآخرها، أو البسملة، أو حشو المُرمِّز encoder padding). المطلوب الفهم لا وصف الخطوات.
+  In your own words, in one or two paragraphs, explain *why* you computed ayah start/end times this way, and what could break their accuracy (e.g. leading/trailing silence, the basmala, encoder padding). Understanding, not a list of steps.
 
 وتذكير: سطر في `logbook.md` عن كل يوم عمل، يُرفع في اليوم نفسه.
 Reminder: one line in `logbook.md` per working day, committed the same day.
