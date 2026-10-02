@@ -34,12 +34,20 @@ If no local GPU is available, use Kaggle or Colab.
   Outputs a CSV in `data/` with the columns:
 
 ```
-reciter,surah,ayah,start,end,source_url,sha256
+reciter,surah,ayah,start,end,lead_silence,trail_silence,source_url,sha256
 ```
 
 ### 4. البسملة | Basmala
 افحصي كيف تعامل EveryAyah البسملة (ملف مستقل؟ مدمجة في الآية الأولى؟)، وكيف يتوقعها منجّم، ووثّقي القرار في README.
 Investigate how EveryAyah handles the basmala (separate file? merged into ayah 1?) and how Munajjam expects it; document the decision in the README.
+
+### 5. الترميز وتعريف الحد | Encoding and boundary definition
+- سجّلي لكل ملف، في `data/sources.csv`: الصيغة، ونوع الترميز (CBR أو VBR)، ومعدل البت، ومعدل العينة، وsha256. استعملي `ffprobe` ولا تعتمدي على اسم الملف.
+  For each file, record in `data/sources.csv`: format, encoding mode (CBR/VBR), bitrate, sample rate, sha256. Use `ffprobe`; don't rely on the file name.
+- قيسي مدة الصمت في أول كل ملف آية وآخره (مثلًا بمرشح `silencedetect` في ffmpeg)، واحفظيها في عمودين `lead_silence` و`trail_silence`. ستُستعمل لاحقًا في سماح الهامش الآمن.
+  Measure leading/trailing silence in each ayah file (e.g. ffmpeg `silencedetect`) and store it as `lead_silence`, `trail_silence`. It will be used later for the safety-margin tolerance.
+- اقرئي فقرة «تعريف الحد» في README، واكتبي في تقريرك هل توافقين عليها أم تقترحين غيرها، ولماذا.
+  Read "Boundary definition" in the README; in your report, say whether you agree or propose otherwise, and why.
 
 ## معايير القبول | Acceptance criteria
 - [ ] إعادة الإنتاج بأمر واحد. | Reproducible with one command.
