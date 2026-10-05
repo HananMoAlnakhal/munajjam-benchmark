@@ -16,6 +16,16 @@ munajjam align 001.mp3 --surah 1 --format json -o fatiha.json
 إن لم يتوفر GPU محليًا فاستعملي Kaggle أو Colab.
 If no local GPU is available, use Kaggle or Colab.
 
+> **تصحيح (3 أكتوبر) | Correction (Oct 3):** الأوامر أعلاه منقولة من README منجّم، وهي لا تعمل كما هي، وقد كشفت ذلك المتدربة في يومها الأول:
+> The commands above are copied from Munajjam's README and do not work as-is; the trainee found this on day 1:
+> 1. لا يوجد extra باسم `faster-whisper` في `pyproject.toml` (يظهر التحذير `does not provide the extra 'faster-whisper'`).
+>    There is no `faster-whisper` extra in `pyproject.toml`.
+> 2. الواجهة الافتراضية `--whisper-backend openai` (transformers)، بينما النموذج الافتراضي `OdyAsh/faster-whisper-base-ar-quran` بصيغة CTranslate2، فيفشل الأمر الافتراضي بـ `Unrecognized model ... model_type`. الحل: `--whisper-backend fasterwhisper` مع تثبيت `faster-whisper` يدويًا.
+>    The default backend is `openai` (transformers) while the default model is a CTranslate2 faster-whisper model, so the default command fails. Fix: `--whisper-backend fasterwhisper` with `faster-whisper` installed manually.
+>
+> **المطلوب | Required:** وثّقي في README الأوامر التي نجحت فعلًا، حرفيًا، مع نسخ Python و`faster-whisper` و`av`. ثم صوغي المشكلتين في مسودتي issue لمستودع منجّم في `reports/upstream-issues.md` (لا تنشريهما قبل المراجعة).
+> Document the exact commands that actually worked, with Python, `faster-whisper` and `av` versions. Then draft both problems as Munajjam issues in `reports/upstream-issues.md` (don't post before review).
+
 ### 2. العينة | Sample
 - **3 قرّاء بالحفص** من EveryAyah، بسرعات أداء مختلفة (سريع / متوسط / بطيء).
   **3 Hafs reciters** from EveryAyah with different pace (fast / medium / slow).
