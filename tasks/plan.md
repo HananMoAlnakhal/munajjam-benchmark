@@ -3,8 +3,8 @@
 المدة الرسمية: شهر واحد. يجوز إنهاء المهام قبل موعدها، لكن أيام الحضور تُسجَّل كما وقعت فعلًا في `logbook.md` (بنظام 24 ساعة، بتوقيت غزة)، ولا يُوقَّع إلا ما سُجِّل.
 Official duration: one month. Tasks may be finished early, but attendance is recorded exactly as it happened in `logbook.md` (24-hour clock, Gaza time); only what is logged is signed.
 
-> **تسريع التدريب | Acceleration:** إن اشترطت الكلية عددًا من الساعات لا من الأيام، أمكن إنهاء التدريب أسرع بزيادة ساعات العمل اليومية، بشرط أن تُسجَّل فعلًا. تأكدي من القسم: هل الشرط أيام أم ساعات؟
-> If the college requires a number of hours rather than days, the training can end sooner by working longer days, provided they are actually logged. Confirm with the department: days or hours?
+> **الجدول | Schedule:** يسير التدريب على الجدول المتفق عليه، أسبوعًا بأسبوع، والتسليم كل خميس. أي تعديل على المدة أو المواعيد يقرره المشرف.
+> The training follows the agreed schedule, week by week, with a deliverable every Thursday. Any change to duration or deadlines is the supervisor's decision.
 
 ---
 
